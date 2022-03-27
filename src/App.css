@@ -57,6 +57,7 @@ body {
   background-color: rgb(60, 156, 97);
   border: 2px solid rgb(0, 0, 0);
   border-radius: 10px;
+  margin: 25px 0;
 }
 
 .card img {

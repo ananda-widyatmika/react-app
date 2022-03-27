@@ -12,12 +12,14 @@ const Songs = ({imgUrl, name, artistName}) => (
 );
 
 const Song = () => {
-    return (
-        <Songs 
-            imgUrl={data.album.images[0].url}
-            name={data.album.name}
-            artistName={data.album.artists[0].name}
-        />
+    return data.map(
+        (e) => (
+            <Songs 
+                imgUrl={e.album.images[0].url}
+                name={e.name}
+                artistName={e.album.artists[0].name}
+            />
+        )
     );
 };
 
